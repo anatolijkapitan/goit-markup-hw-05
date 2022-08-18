@@ -20,7 +20,7 @@
             <a href="" class="header-logo link"> <span class="web-color">Web</span>Studio</a>
             <nav>
                 <ul class="header-list list">
-                    <li class="header-item"> <a href="" class="header-link  link">Студия</a> </li>
+                    <li class="header-item"> <a href="" class="header-link  link current">Студия</a> </li>
                     <li class="header-item"> <a href="./portfolio.html" class="header-link  link">Портфолио</a> </li>
                     <li class="header-item"> <a href="" class="header-link  link">Контакты</a> </li>
                 </ul>
@@ -46,7 +46,7 @@
         <section class="hero overlay">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero-btn">Заказать услугу</button>
+                <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -102,12 +102,15 @@
                 <ul class="work-list list">
                     <li>
                         <img src="./images/imag-1.jpg" alt="Програмуємо" width="370" height="294">
+                        <p class="work-top-text">Десктопні додатки</p>
                     </li>
                     <li>
                         <img src="./images/imag-2.jpg" alt="Верстаємо" width="370" height="294">
+                        <p class="work-top-text">Мобільні додатки</p>
                     </li>
                     <li>
                         <img src="./images/imag-3.jpg" alt="Робимо дизайн" width="370" height="294">
+                        <p class="work-top-text">Дизайнерські рішення</p>
                     </li>
                 </ul>
             </div>
@@ -320,5 +323,17 @@
         </div>
 
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close modal-icon" data-modal-close>
+            <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M15 4.108 13.892 3 9.5 7.392 5.108 3 4 4.108 8.392 8.5 4 12.892 5.108 14 9.5 9.608 13.892 14 15 12.892 10.608 8.5 15 4.108Z"
+                    fill="#000" />
+            </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
